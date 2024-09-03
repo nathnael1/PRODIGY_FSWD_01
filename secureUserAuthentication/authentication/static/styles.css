@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFDD0;
+}
+body .navc {
+  margin-bottom: 3%;
+}
+body .whole {
+  width: 70%;
+  margin: auto;
+}
+body .whole .information {
+  background-color: #131515;
+  color: #FFFAFB;
+  height: 80vh;
+}
+body .whole .information .itop {
+  margin-top: 5%;
+  margin-left: 2%;
+  display: flex;
+}
+body .whole .information .itop img {
+  width: 10%;
+}
+body .whole .information .itop h1 {
+  font-size: 1rem;
+  margin-top: 2%;
+}
+body .whole .information h2 {
+  margin-right: 5%;
+  font-weight: bolder;
+  margin-top: 25%;
+  text-align: right;
+}
+body .whole .information p {
+  margin-top: 7%;
+  font-size: 0.8rem;
+  width: 80%;
+  float: right;
+  margin-right: 5%;
+  text-align: right;
+}
+body .whole .sign {
+  background-color: #ff810b;
+}
+body .whole .sign .signtop {
+  display: flex;
+  margin-top: 1%;
+  justify-content: flex-end;
+  gap: 10px;
+}
+body .whole .sign .signtop a {
+  color: #FFFAFB;
+  text-decoration: none;
+  font-size: 0.9rem;
+  width: 80px;
+  text-align: center;
+  padding: 6px;
+  background-color: #131515;
+  color: #FFFAFB;
+}
+body .whole .sign .signtop p {
+  font-size: 0.6rem;
+  margin-top: 10px;
+}
+body .whole .sign h2 {
+  margin-top: 30%;
+  text-align: center;
+}
+body .whole .sign form {
+  margin-top: 5%;
+}
+body .whole .sign form .email {
+  display: flex;
+  border: 1px solid #7DE2D1;
+  background-color: #7DE2D1;
+  padding: 5px;
+  border-radius: 7px;
+}
+body .whole .sign form .email img {
+  width: 4%;
+}
+body .whole .sign form .email input {
+  width: 95%;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+body .whole .sign form .email input:focus {
+  outline: none;
+}
+body .whole .sign form .password {
+  margin-top: 2%;
+  display: flex;
+  border: 1px solid #7DE2D1;
+  background-color: #7DE2D1;
+  padding: 5px;
+  border-radius: 7px;
+}
+body .whole .sign form .password img {
+  width: 4%;
+}
+body .whole .sign form .password input {
+  width: 95%;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+body .whole .sign form .password input:focus {
+  outline: none;
+}
+body .whole .sign form input[type=submit] {
+  margin-top: 8%;
+  width: 80px;
+  background-color: #131515;
+  color: #FFFAFB;
+  border-radius: 7px;
+  border: none;
+  padding: 8px;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+body .footer-07 {
+  margin-top: 2%;
+  background-color: #131515;
+  margin-bottom: 0;
+}
+body .footer-07 .logo {
+  text-decoration: none;
+}
+body .footer-07 .menu a {
+  text-decoration: none;
+  margin-right: 2px;
+}
+body .footer-07 * {
+  color: #FFFAFB;
+}/*# sourceMappingURL=styles.css.map */

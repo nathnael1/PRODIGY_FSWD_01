@@ -1,0 +1,155 @@
+$text-color: #FFFAFB;
+$info-color:#131515;
+$sign-color:#ff810b;
+$rsign-color:#7DE2D1;
+$rinfo-color:#2B2C28;
+*{
+    margin:0;
+    padding:0;
+}
+body
+{
+    background-color: #FFFDD0;
+    .navc{
+        margin-bottom: 3%;
+    }
+
+    .whole{
+        width:70%;
+        margin:auto;
+       
+        
+        .information{
+            background-color: $info-color;
+            color:$text-color;
+            height:80vh;
+            .itop{
+                margin-top: 5%;
+                margin-left: 2%;
+                display:flex;
+                img{
+                    width:10%;
+    
+                }
+                h1{
+                    font-size:1rem;
+                    margin-top: 2%;
+                }
+            }
+            h2{
+                margin-right: 5%;
+                font-weight: bolder;
+                margin-top: 25%;
+                text-align: right;
+            }
+            p{
+                margin-top: 7%;
+                font-size:0.8rem;
+                width:80%;
+                float:right;
+                margin-right: 5%;
+                text-align: right;
+            }
+        }
+        .sign{
+            background-color:$sign-color ;
+            .signtop{
+                display:flex;
+                margin-top: 1%;
+                justify-content: flex-end;
+                gap:10px;
+                a{
+                    color:$text-color;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    width:80px;
+                    text-align: center;
+                    padding:6px;
+                    background-color: $info-color;
+                    color:$text-color;
+                }
+                p{
+                    font-size:0.6rem;
+                    margin-top: 10px;
+                }
+            }
+            h2{
+                margin-top:30%;
+                text-align: center;
+            }
+            form{
+                margin-top: 5%;
+                .email{
+                    display:flex;
+                    border:1px solid $rsign-color;
+                    background-color: $rsign-color;
+                    padding:5px;
+                    border-radius: 7px;;
+                    img{
+                        width:4%;
+                    }
+                    input{
+                        width:95%;
+                        margin-left: 5px;
+                        border-radius:5px;
+                        border:none;
+                        background-color: transparent;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+                }
+                .password{
+                    margin-top: 2%;
+                    display:flex;
+                    border:1px solid $rsign-color;
+                    background-color: $rsign-color;
+                    padding:5px;
+                    border-radius: 7px;;
+                    img{
+                        width:4%;
+                    }
+                    input{
+                        width:95%;
+                        margin-left: 5px;
+                        border-radius:5px;
+                        border:none;
+                        background-color: transparent;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+                }
+                input[type="submit"]{
+                    margin-top: 8%;
+                    
+                    width:80px;
+                    background-color: $info-color;
+                    color:$text-color;
+                    border-radius: 7px;
+                    border:none;
+                    padding:8px;
+                    margin-right: 45%;
+                    margin-left: 45%;
+                }
+            }
+        }  
+    }
+    .footer-07
+    {
+        margin-top: 2%;
+        background-color: $info-color;
+        margin-bottom: 0;
+        .logo{
+            text-decoration: none;
+        }
+        .menu a{
+            text-decoration: none;
+            margin-right:2px;
+        }
+    }
+    .footer-07 * {
+        color:$text-color
+    }
+
+}
