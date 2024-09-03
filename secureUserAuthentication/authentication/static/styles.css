@@ -146,24 +146,25 @@ body .whole .sign h2 {
 body .whole .sign form {
   margin-top: 5%;
 }
-body .whole .sign form .email {
+body .whole .sign form .email, body .whole .sign form .fullName {
+  margin-top: 2%;
   display: flex;
   border: 1px solid #FFFDD0;
   background-color: #FFFDD0;
   padding: 5px;
   border-radius: 7px;
 }
-body .whole .sign form .email img {
+body .whole .sign form .email img, body .whole .sign form .fullName img {
   width: 4%;
 }
-body .whole .sign form .email input {
+body .whole .sign form .email input, body .whole .sign form .fullName input {
   width: 95%;
   margin-left: 5px;
   border-radius: 5px;
   border: none;
   background-color: transparent;
 }
-body .whole .sign form .email input:focus {
+body .whole .sign form .email input:focus, body .whole .sign form .fullName input:focus {
   outline: none;
 }
 body .whole .sign form .password {
@@ -186,6 +187,18 @@ body .whole .sign form .password input {
 }
 body .whole .sign form .password input:focus {
   outline: none;
+}
+body .whole .sign form .error {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2%;
+}
+body .whole .sign form .success {
+  color: green;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2%;
 }
 body .whole .sign form input[type=submit] {
   margin-top: 8%;

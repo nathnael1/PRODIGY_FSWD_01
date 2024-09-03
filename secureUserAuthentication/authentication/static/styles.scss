@@ -153,7 +153,8 @@ body
             }
             form{
                 margin-top: 5%;
-                .email{
+                .email,.fullName{
+                    margin-top: 2%;
                     display:flex;
                     border:1px solid $rsign-color;
                     background-color: $rsign-color;
@@ -194,6 +195,21 @@ body
                         outline: none;
                     }
                 }
+                .error{
+                    color:red;
+                    font-size:1rem;
+                    font-weight: bold;
+                    margin-top: 2%;
+                    
+                }
+                .success{
+                    color:green;
+                    font-size:1rem;
+                    font-weight: bold;
+                    margin-top: 2%;
+                    
+                }
+                
                 input[type="submit"]{
                     margin-top: 8%;
                     margin-bottom: 2%;

@@ -25,18 +25,25 @@
             <h2>Ullamco laboris nis</h2>
             <form action = "{% url 'register' %}" method="post">
                 {% csrf_token %}
+                <div class="fullName">
+                    <img src="{% static 'username.svg' %}" alt="">
+                    <input  name = "fullName" required type="text" placeholder="Full Name">
+                </div>
                 <div class="email">
                     <img src="{% static 'envelope-solid.svg' %}" alt="">
-                    <input required type="Email" placeholder="Email">
+                    <input  name = "email" required type="Email" placeholder="Email">
                 </div>
                 <div class="password">
-                    <img src="{% static 'key-solid.svg' %}" alt="">
-                    <input required type="password" placeholder="Password">
+                    <img  src="{% static 'key-solid.svg' %}" alt="">
+                    <input name = "password" required type="password" placeholder="Password">
                 </div>
                 <div class="password">
-                    <img src="{% static 'key-solid.svg' %}" alt="">
-                    <input required type="password" placeholder="Password confirmation">
+                    <img  src="{% static 'key-solid.svg' %}" alt="">
+                    <input  name = "passwordConfirmation" required type="password" placeholder="Password confirmation">
                 </div>
+                {% if error %}
+                <p class = "error">{{ error }}</p>
+                {% endif %}
                 <input type="submit" value = "SignUp">
             </form>
         </div>
