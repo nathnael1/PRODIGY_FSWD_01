@@ -76,8 +76,8 @@ body .whole .sign form {
 }
 body .whole .sign form .email {
   display: flex;
-  border: 1px solid #7DE2D1;
-  background-color: #7DE2D1;
+  border: 1px solid #FFFDD0;
+  background-color: #FFFDD0;
   padding: 5px;
   border-radius: 7px;
 }
@@ -97,8 +97,8 @@ body .whole .sign form .email input:focus {
 body .whole .sign form .password {
   margin-top: 2%;
   display: flex;
-  border: 1px solid #7DE2D1;
-  background-color: #7DE2D1;
+  border: 1px solid #FFFDD0;
+  background-color: #FFFDD0;
   padding: 5px;
   border-radius: 7px;
 }
@@ -117,16 +117,19 @@ body .whole .sign form .password input:focus {
 }
 body .whole .sign form input[type=submit] {
   margin-top: 8%;
+  margin-bottom: 2%;
   width: 80px;
   background-color: #131515;
   color: #FFFAFB;
   border-radius: 7px;
   border: none;
   padding: 8px;
-  margin-right: 45%;
-  margin-left: 45%;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 body .footer-07 {
+  position: relative;
+  bottom: 0;
   margin-top: 2%;
   background-color: #131515;
   margin-bottom: 0;
@@ -140,4 +143,36 @@ body .footer-07 .menu a {
 }
 body .footer-07 * {
   color: #FFFAFB;
+  padding: 5px;
+}
+body .icontainer {
+  min-height: 65vh;
+}
+body .icontainer a {
+  background-color: #ff810b;
+  color: #FFFAFB;
+  border-radius: 7px;
+  border: none;
+  padding: 8px;
+  text-decoration: none;
+}
+body .u {
+  width: 70%;
+  margin: 0 auto;
+}
+body .u h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #ff810b;
+}
+body .u p {
+  width: 35%;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+body .u img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block home%}active{%endblock%}
+{%block content %}
+<div class="container icontainer">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <h1>Lorem ipsum </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Curabitur sit amet nulla urna. Duis pretium lobortis mauris aliquet ornare.
+                 Sed at luctus magna, vel porta risus. 
+                 Sed in nisi erat. 
+                 Praesent dapibus mattis massa vel hendrerit. 
+                 Etiam risus nisi, feugiat vel luctus a, tempor sed tortor. 
+                 Vestibulum et tortor non nisi pharetra egestas. 
+                 Mauris laoreet iaculis enim et lobortis.</p>
+            <a href="" >Dive In</a>
+        </div>
+        <div class="d-none d-sm-block  col-6">
+            <img src="{% static 'bg.png'%}" alt="">
+        </div>
+    </div>
+</div>
+{% endblock %}
