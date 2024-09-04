@@ -9,12 +9,11 @@
                 <img src="{% static 'logo.png' %}" alt="">
                 <h1>Authentication</h1>
             </div>
-            <h2>Lorem ipsum dolor sit amet laboris nisi </h2>
+            <h2>Welcome to Our Secure Portal</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-   
-      
+                Access your account securely and enjoy all the benefits of our platform. 
+                Whether you're managing your projects, staying in touch with your team, or exploring new opportunities, we've got you covered.
+                 Your data privacy is our top priority.
             </p>
         </div>
         <div class="col-md-6 col-12 sign">
@@ -22,16 +21,16 @@
                 <p>Don't have an account</p>
                 <a href="{% url 'register' %}"> SignUp</a>
             </div>
-            <h2>Ullamco laboris nis</h2>
+            <h2>Sign In to Your Account</h2>
             <form action = "{% url 'login' %}" method="post">
                 {% csrf_token %}
                 <div class="email">
                     <img src="{% static 'envelope-solid.svg' %}" alt="">
-                    <input required name = "email" type="Email" placeholder="Email">
+                    <input required name = "email" type="Email" placeholder="Enter your email">
                 </div>
                 <div class="password">
                     <img src="{% static 'key-solid.svg' %}" alt="">
-                    <input required name = "password" type="password" placeholder="Password">
+                    <input required name = "password" type="password" placeholder="Enter your password">
                 </div>
                 {% if error %}
                 <p class = "error">{{ error }}</p>

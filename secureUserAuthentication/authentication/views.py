@@ -14,6 +14,7 @@ def index(request):
     return render(request,"unauthorized.html")
 def login(request):
     if request.method == "POST":
+        request.session.flush() 
         email = request.POST["email"]
         password = request.POST["password"]
         email_validator = EmailValidator()

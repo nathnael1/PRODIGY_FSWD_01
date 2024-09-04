@@ -9,12 +9,10 @@
                 <img src="{% static 'logo.png' %}" alt="">
                 <h1>Authentication</h1>
             </div>
-            <h2>Lorem ipsum dolor sit amet laboris nisi </h2>
+            <h2>Join Our Community</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-   
-      
+                Sign up to access personalized features and stay connected with the latest updates. 
+                Your journey starts here—whether you're managing tasks, exploring new content, or collaborating with others, it's all at your fingertips
             </p>
         </div>
         <div class="col-md-6 col-12 sign">
@@ -22,24 +20,24 @@
                 <p>Already have an account</p>
                 <a href="{% url 'login' %}"> Login</a>
             </div>
-            <h2>Ullamco laboris nis</h2>
+            <h2>Create your Account</h2>
             <form action = "{% url 'register' %}" method="post">
                 {% csrf_token %}
                 <div class="fullName">
                     <img src="{% static 'username.svg' %}" alt="">
-                    <input  name = "fullName" required type="text" placeholder="Full Name">
+                    <input  id = "fullName" name = "fullName" required type="text" placeholder="Enter you full name">
                 </div>
                 <div class="email">
                     <img src="{% static 'envelope-solid.svg' %}" alt="">
-                    <input  name = "email" required type="Email" placeholder="Email">
+                    <input  id = "email" name = "email" required type="Email" placeholder="Enter your email address">
                 </div>
                 <div class="password">
                     <img  src="{% static 'key-solid.svg' %}" alt="">
-                    <input name = "password" required type="password" placeholder="Password">
+                    <input name = "password" required type="password" placeholder="Create a strong password">
                 </div>
                 <div class="password">
                     <img  src="{% static 'key-solid.svg' %}" alt="">
-                    <input  name = "passwordConfirmation" required type="password" placeholder="Password confirmation">
+                    <input  name = "passwordConfirmation" required type="password" placeholder="Confirm your password">
                 </div>
                 {% if error %}
                 <p class = "error">{{ error }}</p>
