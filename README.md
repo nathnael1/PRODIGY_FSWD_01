@@ -14,10 +14,13 @@ PRODIGY_FSWD_01 is a secure user authentication system built with Django. It inc
    ```sh
    git clone https://github.com/nathnael1/PRODIGY_FSWD_01.git
 2. Navigate to the project directory  
+    ```sh
     cd PRODIGY_FSWD_01  
 3. Apply the migrations  
+    ```sh
     python manage.py migrate
 4. Run the development server  
+    ```sh
     python manage.py runserer
 ## credit
 Footer template : https://colorlib.com/  
