@@ -20,5 +20,5 @@ PRODIGY_FSWD_01 is a secure user authentication system built with Django. It inc
 4. Run the development server  
     python manage.py runserer
 ## credit
-Footer template : https://colorlib.com/
+Footer template : https://colorlib.com/  
 Authentication logo:  "designed by Pixelmeetup from Flaticon" - WWW.flaticon.com
